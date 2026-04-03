@@ -50,3 +50,19 @@ With the first scan I can see a lot of ports and information but these are the m
 - 445: This port if for the SMB service. I will scan for files that can give me more information and search for vulnerabilities.
 - 389, 636: LDAP. In these port I can search for users that are in the domain
 - 5985: WinRM. If I get a credential I can try to log in
+
+With this scan I used the searchsploit tool to find useful exploits for this services but unfortunately I didn't find anything.
+
+Now I will try to search for public shares that can give me more information 
+
+I use crackmapexec and I get the name of the server and domain
+
+![](<../../assets/Pasted image 20260403112859.png>)
+
+With nmblookup I get the same information
+
+![](<../../assets/Pasted image 20260403113503.png>)
+
+I try to enumerate users with the anonymous login but it doesn't show me anything.
+
+![](<../../assets/Pasted image 20260403114734.png>)
